@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px; /* Reduced from 1521px */
+    margin: 0 auto;
+    padding: 20px 0; /* Less vertical spacing */
+}
+
+.content h1 {
+  font-size: 1.5rem;
+  margin-bottom: 30px; /* 👈 Controls the gap between h1 and p */
+  color: #000000; /* Optional: to match theme */
+}
+
+
+.heading {
+  text-align: center;
+  color: #8B0000;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  
+}
+
+
+
+.book-section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Reduced from 40px */
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 15px; /* Reduced padding */
+    border-radius: 10px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book img {
+    width: 100%;
+    max-width: 400px; /* Reduced from 627px */
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.content {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.content p {
+    margin-bottom: 8px;
+}
+
+.order-btn {
+  padding: 12px 28px;
+  background-color: #b30000;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  margin: 20px 50px; /* 🔁 Top/Bottom = 20px, Left/Right = 50px */
+  box-shadow: none;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+}
+
+
+.order-btn:hover {
+   background-color: #ff0000; /* Brighter red on hover */
+  transform: scale(1.05);    /* Slight zoom */
+  box-shadow: none;          /* No shadow on hover */
+}
+
+.back-btn-container {
+    text-align: center;
+    margin-top: 100px;
+     margin-bottom: 30px;
+}
+
+.back-btn {
+  padding: 12px 28px;
+  background-color: #b30000;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  margin: 0 10px;
+  box-shadow: none; /* No shadow initially */
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+}
+
+.back-btn:hover {
+  background-color: #ff0000; /* Brighter red on hover */
+  transform: scale(1.05);    /* Slight zoom */
+  box-shadow: none;          /* No shadow on hover */
+}
+
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .book {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .content {
+        margin-top: 0;
+        margin-left: 20px;
+        flex: 1;
+    }
+}
+

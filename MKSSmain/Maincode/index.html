@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MKSS | Mazdoor Kisan Shakti Sangathan</title>
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   
+</head>
+<body>
+
+
+
+<!-- 🌟 Landing Page -->
+<header class="landing-page" data-aos="fade-down">
+  <!-- Dropdown Menu (Top Left) -->
+  <div class="dropdown-wrapper">
+    <button id="menuToggle" class="btn btn-danger" type="button">☰</button>
+    <div class="dropdown" id="menuContainer">
+      <ul class="dropdown-menu">
+        <li class="dropdown-submenu">
+          <a class="test" href="#">Campaign</a>
+          <ul class="dropdown-menu">
+            <li><a href="RTI_page.html">Right to Information (RTI)</a></li>
+            <li><a href="NREGA_page.html">MGNREGA – Right to Work</a></li>
+            <li><a href="JANSUNWAI.html">Jansunwai (Public Hearings)</a></li>
+            <li><a href="INCOME.html">Minimum Wages Campaign</a></li>
+            <li><a href="#">Social Audit Movement</a></li>
+            <li><a href="#">Minimum Guarantee Act</a></li>
+            <li><a href="#">Pension Rights Campaign</a></li>
+            <li><a href="#">Public Distribution System (PDS) Reform</a></li>
+            <li><a href="#">Devdungri Principle / Swaraj Model</a></li>
+            <li><a href="#">Right to Education Access</a></li>
+            <li><a href="#">Support for Rural Workers</a></li>
+            <li><a href="#">Transparency in Local Governance</a></li>
+            <li><a href="#">Democratic Decentralization (Panchayati Raj)</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown-submenu">
+          <a class="test" href="#">About Us</a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-submenu">
+              <a class="test" href="#">Team</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">------</a></li>
+                <li><a href="#">------</a></li>
+                <li><a href="#">------</a></li>
+                <li><a href="#">------</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Vision</a></li>
+            <li><a href="#">Location</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown-submenu">
+          <a class="test" href="#">Live</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Live Campaigns</a></li>
+            <li><a href="#">Public Hearings</a></li>
+            <li><a href="#">Village Reports</a></li>
+            <li><a href="#">Social Audits</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#Media">Media</a></li>
+        <li><a href="#">Association</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Navigation Buttons -->
+  <nav class="nav-buttons" data-aos="fade-down" data-aos-delay="150">
+    <a href="#about" class="nav-button">About Us</a>
+    <a href="#lang-toggle" class="nav-button">Hindi</a>
+    <a href="#campaigns" class="nav-button">Join</a>
+    <a href="#contact" class="nav-button">Contact Us</a>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container" data-aos="fade-up" data-aos-delay="300">
+    <img src="/imagefile/logo.png" alt="MKSS Logo" class="logo" />
+    <div class="text-group">
+      <h1 class="fade-text">MKSS</h1>
+      <p class="fade-text">मजदूर किसान शक्ति संगठन</p>
+    </div>
+  </div>
+</header>
+
+<!-- ✅ JavaScript for dropdown functionality -->
+<script>
+  $(document).ready(function () {
+    // Toggle main dropdown
+    $('#menuToggle').click(function () {
+      $('#menuContainer .dropdown-menu').slideToggle(200);
+    });
+
+    // Show submenus on hover
+    $('.dropdown-submenu').hover(function () {
+      $(this).children('.dropdown-menu').stop(true, true).fadeIn(200);
+    }, function () {
+      $(this).children('.dropdown-menu').stop(true, true).fadeOut(200);
+    });
+  });
+</script>
+
+
+<!-- 📢 CAMPAIGN SECTION -->
+<section class="campaigns-section" id="campaigns" data-aos="fade-up">
+  <h2 class="campaign-heading" data-aos="fade-up">Campaigns</h2>
+
+  <div class="slider" data-aos="fade-up" data-aos-delay="100">
+    <!-- Image Box -->
+    <div class="image-box" id="imageBox" data-aos="fade-up" data-aos-delay="200">
+      <img src="RTIpic.jpg" id="sliderImage" class="active" />
+      <div class="controls">
+        <button onclick="changeSlide(-1)">&#9664;</button>
+        <button onclick="changeSlide(1)">&#9654;</button>
+      </div>
+    </div>
+
+    <!-- Topic Box -->
+    <div class="topic-box-wrapper" id="topicWrapper" data-aos="fade-up" data-aos-delay="300">
+      <a href="RTI_page.html" class="topic-box active" id="topicBox">RTI</a>
+    </div>
+
+    <!-- Info Box -->
+    <div class="info-box" id="infoBox" data-aos="fade-up" data-aos-delay="400">
+      <p id="infoText">
+        The Right to Information empowers citizens to access government records, ensuring transparency, accountability, and active participation in democracy.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- 🕒 Timeline Section -->
+<section class="timeline-section" id="timeline" data-aos="fade-up">
+  <h2 class="timeline-heading" data-aos="fade-up">Timeline</h2>
+
+  <div class="timeline-row" data-aos="fade-up" data-aos-delay="100">
+    <div class="image-box box1"></div>
+    <div class="text-box">
+      <h3>1990 – Formation of MKSS</h3>
+      <p>Mazdoor Kisan Shakti Sangathan is founded in Devdungri, Rajasthan by Aruna Roy and team to fight for workers' rights and transparency.</p>
+    </div>
+  </div>
+
+  <div class="timeline-row" data-aos="fade-up" data-aos-delay="200">
+    <div class="image-box box2"></div>
+    <div class="text-box">
+      <h3>1994 – First Jansunwai (Public Hearing)</h3>
+      <p>Conducted in Bhimpur, Rajasthan. It publicly exposed corruption in development works, laying the foundation for RTI activism.</p>
+    </div>
+  </div>
+
+  <div class="timeline-row" data-aos="fade-up" data-aos-delay="300">
+    <div class="image-box box3"></div>
+    <div class="text-box">
+      <h3>1996 – RTI Movement Gains Momentum</h3>
+      <p>MKSS organizes mass protests and dharna in Jaipur demanding the Right to Information law.</p>
+    </div>
+  </div>
+
+  <div class="timeline-row" data-aos="fade-up" data-aos-delay="400">
+    <div class="image-box box4"></div>
+    <div class="text-box">
+      <h3>2000 – Rajasthan Passes State RTI Act</h3>
+      <p>After years of activism, Rajasthan becomes one of the first Indian states to enact a Right to Information law.</p>
+    </div>
+  </div>
+
+  <div class="timeline-row" data-aos="fade-up" data-aos-delay="500">
+    <div class="image-box box5"></div>
+    <div class="text-box">
+      <h3>2005 – National RTI Act Enacted</h3>
+      <p>A major national victory. MKSS’s efforts contribute to the RTI Act 2005, empowering every Indian citizen to demand government records.</p>
+    </div>
+  </div>
+
+  <div class="timeline-row" data-aos="fade-up" data-aos-delay="600">
+    <div class="image-box box6"></div>
+    <div class="text-box">
+      <h3>2006–Present – Social Audits & Welfare Campaigns</h3>
+      <p>MKSS leads social audits for MGNREGA, and campaigns for minimum wages, pensions, and accountability laws.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+  <!-- 🧭 About Us -->
+
+<section class="about-section" id="about" data-aos="fade-up">
+  <h2 class="about-heading">About Us</h2>
+
+  <img src="/imagefile/devhome.jpg" alt="MKSS Start" class="about-image" data-aos="fade-up" data-aos-delay="100" />
+
+  <div class="caption-text" data-aos="fade-up" data-aos-delay="200">"It all began here."</div>
+
+  <a href="/AboutUS/aboutus.html" class="view-more-btn" data-aos="fade-up" data-aos-delay="300">View More</a>
+</section>
+
+  <!-- 🤝 Association -->
+<section class="association-section" id="association" data-aos="fade-up">
+  <h2 class="section-title">Association</h2>
+  <div class="card-container">
+
+    <div class="card" data-aos="fade-up" data-aos-delay="100">
+      <div class="card-image" style="background-image: url('/imagefile/kirana.jpg');"></div>
+      <div class="card-content">
+        <h3>Mazdoor Kisan Kirana Vyapar Private Limited</h3>
+        <a href="https://mkssindia.org/mazdoor-kisan-kirana-vyapar-private-limited-2/" class="view-more">View More</a>
+      </div>
+    </div>
+
+    <div class="card" data-aos="fade-up" data-aos-delay="200">
+      <div class="card-image" style="background-image: url('/imagefile/download-1.png');"></div>
+      <div class="card-content">
+        <h3>School for Democracy</h3>
+        <a href="https://schoolfordemocracy.org/" class="view-more">View More</a>
+      </div>
+    </div>
+
+    <div class="card" data-aos="fade-up" data-aos-delay="300">
+      <div class="card-image" style="background-image: url('/imagefile/union.jpg');"></div>
+      <div class="card-content">
+        <h3>Rajasthan Asangathit Mazdoor Union</h3>
+        <a href="https://www.ramuindia.org/" class="view-more">View More</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- 📰 Media -->
+<!-- 📰 Media -->
+<section class="media-section" id="media" data-aos="fade-up">
+  <h2 class="media-heading" data-aos="fade-up" data-aos-delay="100">Media</h2>
+
+  <div class="media-cards" data-aos="fade-up" data-aos-delay="200">
+    <!-- Media Card 1 -->
+    <div class="media-card" data-aos="fade-up" data-aos-delay="300">
+      <img src="/imagefile/newspaper.jpg" alt="Newspaper 1" class="media-image" />
+      <p class="media-text">Newspaper</p>
+      <a href="/Newspaper/Newspaper.html" class="media-button">Click</a>
+    </div>
+
+    <!-- Media Card 2 -->
+    <div class="media-card" data-aos="fade-up" data-aos-delay="400">
+      <img src="/imagefile/magzine.png" alt="Newspaper 2" class="media-image" />
+      <p class="media-text">Media</p>
+      <a href="#" class="media-button">Click</a>
+    </div>
+
+    <!-- Media Card 3 -->
+    <div class="media-card" data-aos="fade-up" data-aos-delay="500">
+      <img src="/imagefile/RTIbook.jpg" alt="Newspaper 3" class="media-image" />
+      <p class="media-text">Book</p>
+      <a href="/BOOK/book.html" class="media-button">Click</a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- 📞 Contact Us Footer -->
+<section class="contact-footer-box" data-aos="fade-up">
+  <div class="contact-left" data-aos="fade-up" data-aos-delay="100">
+    <h2>Contact Us</h2>
+    <ul>
+      <li><a href="mailto:mkssrajasthan@gmail.com"><strong>mkssrajasthan@gmail.com</strong></a></li>
+      <li><strong>+91 94140 03247</strong></li>
+      <li>
+        <strong>
+          Village Devdungri, Post Brar,<br>
+          Rajsamand, Rajasthan, India<br>
+          313341
+        </strong>
+      </li>
+      <li>
+        <a href="logo2.png" target="_blank"><strong>Submit via Google Form</strong></a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="contact-right" data-aos="fade-up" data-aos-delay="200">
+    <img src="/imagefile/logo.png" alt="Fist Icon" />
+  </div>
+</section>
+
+
+  <!-- Footer Credit Section -->
+<!-- 🌙 Footer Credit Section -->
+<section class="footer-credits" data-aos="fade-up">
+  <div class="footer-credit-content">
+    <p>This website was developed in collaboration with <strong>MOON</strong>.</p>
+    <p><strong>Girija Sharma</strong>, <strong>Aniket Patel</strong>, <strong>Ankit Singh Chouhan</strong>.</p>
+    <hr class="footer-line" />
+    <p>&copy; 2025 MAZDOOR KISAN SHAKTI SANGATHAN. All rights reserved.</p>
+  </div>
+</section>
+</body>
+</html>
+
+
+
+  <!-- JS File -->
+  <script src="script.js"></script>
+
+  <!-- ✅ AOS JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+
+</body>
+</html>
